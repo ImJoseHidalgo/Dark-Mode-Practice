@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.wrapper {
+  padding: 0 30px;
+}
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  background: #f0f3fa;
+}
+.card:before {
+  content: "";
+  height: 4px;
+  display: block;
+  background: red;
+}
+
+/* MINUTO 14 */
