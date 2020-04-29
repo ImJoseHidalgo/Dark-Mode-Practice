@@ -2,6 +2,16 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+:root {
+  --line-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 68%, 56%);
+  --twitter: hsl(195, 100%, 50%);
+  --facebook: hsl(203, 89%, 53%);
+  --instagram-1: hsl(37, 97%, 70%);
+  --instagram-2: hsl(329, 70%, 58%);
+  --youtube: hsl(348, 97%, 39%);
+  --gray: #9b9ea7;
+}
 .wrapper {
   padding: 0 30px;
 }
@@ -9,12 +19,37 @@ body {
   border-radius: 5px;
   overflow: hidden;
   background: #f0f3fa;
+  text-align: center;
 }
 .card:before {
   content: "";
   height: 4px;
   display: block;
-  background: red;
+  background: var(--facebook);
 }
-
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6f717e;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.card-title img {
+  margin-right: 8px;
+}
+.card-followers {
+  border: 1px solid red;
+}
+.card-followers-number {
+  border: 1px solid orangered;
+  font-size: 50px;
+  font-weight: 700;
+}
+.card-followers-title {
+  border: 1px solid rebeccapurple;
+  display: block;
+  text-transform: uppercase;
+  color: var(--gray);
+}
 /* MINUTO 14 */
