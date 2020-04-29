@@ -1,3 +1,4 @@
+/* global */
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -15,8 +16,35 @@ body {
 .wrapper {
   padding: 0 30px;
 }
+.grid {
+  display: grid;
+  grid-row-gap: 25px;
+}
+/* header*/
+.header {
+  /*border: 1px solid red;*/
+  background: #f8f9fe;
+  padding-bottom: 100px;
+  border-radius: 0 0 20px 20px;
+  padding-top: 2em;
+}
+.header-total {
+  color: #6f717e;
+  margin: 0.5em 0;
+  font-weight: 600;
+  border-bottom: 2px solid var(--gray);
+  padding-bottom: 1.5em;
+}
+h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+.top-cards {
+  /*border: 1px solid blue;*/
+  margin-top: -50px;
+}
 .card {
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
   background: #f0f3fa;
   text-align: center;
@@ -39,17 +67,32 @@ body {
   margin-right: 8px;
 }
 .card-followers {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .card-followers-number {
-  border: 1px solid orangered;
+  /*  border: 1px solid orangered;*/
   font-size: 50px;
   font-weight: 700;
 }
 .card-followers-title {
-  border: 1px solid rebeccapurple;
+  /*border: 1px solid rebeccapurple;*/
   display: block;
   text-transform: uppercase;
   color: var(--gray);
+  letter-spacing: 5px;
+  font-size: 0.75em;
 }
-/* MINUTO 14 */
+.card-today {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  color: var(--line-green);
+  font-size: 0.7em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-today img {
+  margin-right: 5px;
+}
+/* MINUTO 47 */
