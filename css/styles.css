@@ -42,18 +42,40 @@ h1 {
 .top-cards {
   /*border: 1px solid blue;*/
   margin-top: -50px;
+  margin-bottom: 3em;
 }
 .card {
   border-radius: 8px;
   overflow: hidden;
   background: #f0f3fa;
   text-align: center;
+  padding: 1.7em 0;
+  position: relative;
 }
 .card:before {
   content: "";
   height: 4px;
   display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.card.facebook::before {
   background: var(--facebook);
+}
+.card.twitter::before {
+  background: var(--twitter);
+}
+.card.instagram::before {
+  background: linear-gradient(
+    to right,
+    var(--instagram-1) 0%,
+    var(--instagram-2) 100%
+  );
+}
+.card.youtube::before {
+  background: var(--youtube);
 }
 .card-title {
   display: flex;
@@ -84,7 +106,6 @@ h1 {
 }
 .card-today {
   margin-top: 25px;
-  margin-bottom: 35px;
   color: var(--line-green);
   font-size: 0.7em;
   font-weight: bold;
@@ -95,4 +116,50 @@ h1 {
 .card-today img {
   margin-right: 5px;
 }
-/* MINUTO 47 */
+.overview {
+  padding-bottom: 2em;
+}
+h2 {
+  color: #6f717e;
+}
+.card-small {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1em;
+  background: #f0f3fa;
+  border-radius: 8px;
+  padding: 1.7em;
+}
+.card-small p {
+  margin: 0;
+}
+.card-small-views {
+  color: #6f717e;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.card-small-icon {
+  text-align: right;
+}
+.card-small-number {
+  font-weight: bold;
+  font-size: 2.3em;
+  line-height: 0.9;
+}
+.card-small-percentage {
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  color: var(--line-green);
+  justify-content: flex-end;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.card-small-percentage span {
+  display: flex;
+  align-items: center;
+}
+.card-small-percentage img {
+  margin-right: 5px;
+}
+/* MINUTO 1:27 */
