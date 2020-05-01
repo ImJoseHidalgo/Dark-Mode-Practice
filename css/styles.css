@@ -12,6 +12,7 @@ body {
   --instagram-2: hsl(329, 70%, 58%);
   --youtube: hsl(348, 97%, 39%);
   --gray: #9b9ea7;
+  --card-color: #f0f3fa;
 }
 .wrapper {
   padding: 0 30px;
@@ -47,7 +48,7 @@ h1 {
 .card {
   border-radius: 8px;
   overflow: hidden;
-  background: #f0f3fa;
+  background: var(--card-color);
   text-align: center;
   padding: 1.7em 0;
   position: relative;
@@ -126,7 +127,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 1em;
-  background: #f0f3fa;
+  background: var(--card-color);
   border-radius: 8px;
   padding: 1.7em;
 }
@@ -186,8 +187,27 @@ h2 {
 /* DARK MODE*/
 @media (prefers-color-scheme: dark) {
   body {
-    background: black;
+    background: #1d2029;
+    color: white;
+  }
+  .header {
+    background: #1d2029;
+  }
+  :root {
+    --card-color: #252b43;
+    --gray: #8088ad;
+  }
+  .card {
+  }
+  .card-followers-title {
+    color: #8088ad;
+  }
+  .card-small {
+    background: #252b43;
+  }
+  .card-small-views {
+    color: #8088ad;
   }
 }
 
-/* MINUTO 1:27 */
+/* MINUTO 1:43 */
