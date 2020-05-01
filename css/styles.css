@@ -198,6 +198,15 @@ h2 {
   font-size: 0.9em;
   font-weight: bold;
 }
+.card-small-percentage-down {
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  color: red;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  font-weight: bold;
+}
 .card-small-percentage span {
   display: flex;
   align-items: center;
