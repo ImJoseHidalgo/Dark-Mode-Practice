@@ -272,8 +272,7 @@ h2 {
     --light-gray: #1d2029;
     --card-title: #8088ad;
     --switch-spinner: #282943;
-    --switch: linear-gradient(to right, #4796d2 0%, #37ce8f, 100%);
+    --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
   }
 }
 
-/* MINUTO 1:43 */
